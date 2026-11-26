@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accounting, Audit, Tax and Customs Advisory in Nairobi | Mutunga D.M and Company</title>
+<meta name="description" content="Mutunga D.M and Company is a Nairobi-based CPA practice offering accounting, audit, tax and customs advisory. Led by CPA Dennis Musembi Mutunga (P/2201), Westlands, Nairobi.">
+<meta name="keywords" content="Accounting firm Nairobi, Audit firm Nairobi, Tax consultant Nairobi, Tax advisory Kenya, Customs consultancy Kenya, KRA tax compliance Nairobi, CPA firm Westlands Nairobi">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --navy:#0A1D3A;
+  --navy-2:#0F2A52;
+  --navy-3:#123566;
+  --blue:#1D5FD0;
+  --blue-dark:#1750b3;
+  --blue-light:#EAF1FC;
+  --blue-soft:#F4F8FE;
+  --ink:#0B1220;
+  --body:#4A5A70;
+  --muted:#7A879B;
+  --line:#E3E9F2;
+  --white:#FFFFFF;
+  --bg:#F7F9FC;
+  --radius:16px;
+  --radius-sm:10px;
+  --shadow:0 10px 30px rgba(10,29,58,.08);
+  --shadow-lg:0 22px 55px rgba(10,29,58,.14);
+  --max:1180px;
+  --ease:cubic-bezier(.2,.7,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:16px;line-height:1.68;color:var(--body);
+  background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3,h4,h5{font-family:'Fraunces',Georgia,'Times New Roman',serif;color:var(--navy);line-height:1.2;font-weight:600;letter-spacing:-.015em;font-optical-sizing:auto}
+p{margin:0}
+a{text-decoration:none;color:inherit}
+img,svg{display:block;max-width:100%}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,select,textarea{font-family:inherit;font-size:15px}
+::selection{background:var(--blue);color:#fff}
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 26px;border-radius:var(--radius-sm);
+  font-size:15px;font-weight:600;letter-spacing:.005em;
+  border:1px solid transparent;transition:all .28s var(--ease);
+  white-space:nowrap;line-height:1;
+}
+.btn svg{width:17px;height:17px;flex-shrink:0}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 8px 22px rgba(29,95,208,.26)}
+.btn-primary:hover{background:var(--blue-dark);transform:translateY(-2px);box-shadow:0 14px 30px rgba(29,95,208,.34)}
+.btn-dark{background:var(--navy);color:#fff;box-shadow:0 8px 22px rgba(10,29,58,.22)}
+.btn-dark:hover{background:var(--navy-2);transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.34)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff;transform:translateY(-2px)}
+.btn-outline{background:#fff;color:var(--navy);border-color:#CBD7E8}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-wa{background:#1FA855;color:#fff;box-shadow:0 8px 22px rgba(31,168,85,.25)}
+.btn-wa:hover{background:#178a45;transform:translateY(-2px)}
+
+/* ============ TOP BAR ============ */
+.topbar{background:var(--navy);color:#C3D2E7;font-size:13px}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:44px;padding-top:6px;padding-bottom:6px;flex-wrap:wrap}
+.topbar-left{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.topbar-item{display:inline-flex;align-items:center;gap:7px;color:#C3D2E7;transition:color .2s}
+.topbar-item:hover{color:#fff}
+.topbar-item svg{width:14px;height:14px;opacity:.85;flex-shrink:0}
+.topbar-right{display:inline-flex;align-items:center;gap:8px;color:#8FB3E6;font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:500}
+.topbar-dot{width:6px;height:6px;border-radius:50%;background:#3FCF8E;box-shadow:0 0 0 3px rgba(63,207,142,.18)}
+
+/* ============ HEADER ============ */
+.site-header{position:sticky;top:0;z-index:200;background:#fff;border-bottom:1px solid var(--line);transition:box-shadow .3s ease}
+.site-header.scrolled{box-shadow:0 6px 26px rgba(10,29,58,.09)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:80px}
+.logo{display:flex;align-items:center;gap:13px;flex-shrink:0;cursor:pointer}
+
+/* Updated Logo Mark to hold an Image */
+.logo-mark{
+  width:48px;height:48px;border-radius:12px;flex-shrink:0;
+  background:#fff; /* White background to match logo */
+  display:grid;place-items:center;
+  box-shadow:0 4px 12px rgba(10,29,58,.08);
+  border: 1px solid var(--line);
+  padding: 4px;
+  overflow: hidden;
+}
+.logo-mark img{width:100%;height:100%;object-fit:contain}
+
+.logo-text strong{display:block;font-family:'Fraunces',serif;font-size:17px;font-weight:700;color:var(--navy);line-height:1.2;letter-spacing:-.005em}
+.logo-text span{display:block;font-size:10.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px}
+
+.nav{display:flex;align-items:center;gap:4px}
+.nav-link{position:relative;padding:10px 15px;border-radius:8px;font-size:14.5px;font-weight:500;color:#3A4A63;transition:all .2s;cursor:pointer}
+.nav-link:hover{color:var(--navy);background:var(--blue-light)}
+.nav-link.active{color:var(--navy);font-weight:700}
+.nav-link.active::after{content:'';position:absolute;left:15px;right:15px;bottom:3px;height:2px;background:var(--blue);border-radius:2px}
+.header-cta{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.header-cta .btn{padding:12px 22px;font-size:14px}
+
+.nav-toggle{display:none;width:44px;height:44px;border-radius:10px;align-items:center;justify-content:center;flex-direction:column;gap:5px;border:1px solid var(--line);background:#fff}
+.nav-toggle span{display:block;width:19px;height:2px;background:var(--navy);border-radius:2px;transition:.3s var(--ease)}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ============ PAGES ============ */
+.page{display:none}
+.page.active{display:block;animation:pageIn .5s var(--ease)}
+@keyframes pageIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ============ SECTION HELPERS ============ */
+.section{padding:90px 0}
+.section--tight{padding:64px 0}
+.section--alt{background:var(--bg)}
+.section--blue{background:var(--blue-soft)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:700;letter-spacing:.19em;text-transform:uppercase;color:var(--blue)}
+.eyebrow::before{content:'';width:26px;height:2px;background:var(--blue);border-radius:2px}
+.eyebrow--light{color:#7FB0F2}
+.eyebrow--light::before{background:#7FB0F2}
+.eyebrow--center{justify-content:center}
+.section-head{max-width:730px;margin:0 auto 54px;text-align:center}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.45rem);margin:16px 0 16px}
+.section-head p{font-size:16.5px;color:var(--body)}
+
+.page-hero{background:linear-gradient(135deg,#081729 0%,var(--navy) 45%,var(--navy-3) 100%);color:#fff;padding:76px 0 66px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;width:540px;height:540px;border-radius:50%;background:radial-gradient(circle,rgba(29,95,208,.42),transparent 66%);top:-240px;right:-140px}
+.page-hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:58px 58px;-webkit-mask-image:radial-gradient(ellipse at 25% 0%,#000 10%,transparent 72%);mask-image:radial-gradient(ellipse at 25% 0%,#000 10%,transparent 72%)}
+.page-hero .container{position:relative;z-index:2;max-width:900px}
+.page-hero h1{color:#fff;font-size:clamp(2rem,3.8vw,3rem);margin:18px 0 16px}
+.page-hero p{color:#BFD1E8;font-size:17px;max-width:660px}
+
+/* ============ HERO ============ */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,#071527 0%,var(--navy) 42%,var(--navy-3) 100%);padding:84px 0 96px}
+.hero::before{content:'';position:absolute;width:680px;height:680px;border-radius:50%;background:radial-gradient(circle,rgba(29,95,208,.46),transparent 65%);top:-280px;right:-160px;pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.038) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.038) 1px,transparent 1px);background-size:60px 60px;-webkit-mask-image:radial-gradient(ellipse at 28% 10%,#000 5%,transparent 68%);mask-image:radial-gradient(ellipse at 28% 10%,#000 5%,transparent 68%)}
+.hero-inner{position:relative;z-index:3;display:grid;grid-template-columns:1.32fr .88fr;gap:62px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.05rem,4.1vw,3.35rem);margin:20px 0 22px;letter-spacing:-.025em;line-height:1.14}
+.hero-lead{font-size:17.5px;color:#BFD1E8;max-width:610px;line-height:1.72}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-points{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:38px;padding-top:28px;border-top:1px solid rgba(255,255,255,.13)}
+.hero-points li{display:flex;align-items:center;gap:9px;font-size:13.5px;color:#C9D9EE;font-weight:500}
+.hero-points svg{width:16px;height:16px;color:#4FA3FF;flex-shrink:0}
+
+.hero-card{background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:32px 30px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 30px 70px rgba(0,0,0,.3)}
+.hero-card h3{color:#fff;font-size:1.28rem;margin-bottom:8px}
+.hero-card>p{font-size:14px;color:#A9C0DC;margin-bottom:22px}
+.contact-list{display:flex;flex-direction:column;gap:15px;margin-bottom:26px}
+.contact-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:#D3E1F2}
+.contact-list svg{width:17px;height:17px;color:#4FA3FF;flex-shrink:0;margin-top:3px}
+.contact-list a:hover{color:#fff;text-decoration:underline}
+.hero-card .btn{margin-bottom:10px}
+.hero-card .btn:last-child{margin-bottom:0}
+
+/* ============ TRUST STRIP ============ */
+.trust-strip{background:#fff;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:28px 0}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:13.2px;font-weight:500;color:#33455E;line-height:1.4}
+.trust-item svg{width:19px;height:19px;color:var(--blue);flex-shrink:0}
+
+/* ============ GRIDS & CARDS ============ */
+.grid{display:grid;gap:26px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+
+.card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;overflow:hidden;transition:transform .32s var(--ease),box-shadow .32s var(--ease),border-color .32s}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),#5C97EA);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:#CFDCEF}
+.card:hover::before{transform:scaleX(1)}
+.card-icon{width:54px;height:54px;border-radius:13px;background:var(--blue-light);color:var(--blue);display:grid;place-items:center;margin-bottom:20px;transition:all .32s var(--ease)}
+.card:hover .card-icon{background:var(--blue);color:#fff;transform:rotate(-4deg)}
+.card-icon svg{width:26px;height:26px}
+.card h3{font-size:1.16rem;margin-bottom:11px;font-weight:700}
+.card p{font-size:14.6px;line-height:1.66}
+.card-link{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-size:13.5px;font-weight:700;color:var(--blue);transition:gap .25s;cursor:pointer}
+.card-link:hover{gap:11px}
+.card-link svg{width:15px;height:15px}
+.card ul.bullets{margin-top:14px;display:flex;flex-direction:column;gap:9px}
+.card ul.bullets li{position:relative;padding-left:22px;font-size:14.2px;line-height:1.55;color:var(--body)}
+.card ul.bullets li::before{content:'';position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--blue);opacity:.75}
+
+/* ============ VALUES ============ */
+.value-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:all .3s var(--ease)}
+.value-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#CFDCEF}
+.value-num{font-family:'Fraunces',serif;font-size:14px;font-weight:700;color:var(--blue);width:38px;height:38px;border-radius:50%;background:var(--blue-light);display:grid;place-items:center;margin-bottom:16px;letter-spacing:.02em}
+.value-card h3{font-size:1.05rem;margin-bottom:9px;font-weight:700}
+.value-card p{font-size:14.3px;line-height:1.62}
+
+/* ============ SPLIT / PRINCIPAL ============ */
+.split{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center}
+.split--reverse{grid-template-columns:1.15fr 1fr}
+
+/* Updated Portrait to hold an Image */
+.portrait{
+  position:relative;border-radius:20px;overflow:hidden;
+  background:var(--navy); /* Fallback color */
+  aspect-ratio:4/4.4;display:flex;align-items:flex-end;
+  box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,.08);
+}
+.portrait-img{
+  position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;z-index:1;
+}
+.portrait::after{
+  content:'';position:absolute;inset:0;z-index:2;
+  background:linear-gradient(to top, rgba(10,29,58,0.85) 0%, rgba(10,29,58,0.2) 40%, transparent 100%);
+}
+.portrait-badge{
+  position:relative;z-index:3;width:100%;margin:20px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:12px;padding:13px 16px;
+}
+.portrait-badge strong{display:block;color:#fff;font-size:14.5px;font-weight:700}
+.portrait-badge span{display:block;color:#A9C0DC;font-size:12px;letter-spacing:.06em;margin-top:3px}
+
+.split h2{font-size:clamp(1.6rem,2.8vw,2.2rem);margin:16px 0 18px}
+.split p+p{margin-top:15px}
+.split-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.credential-list{display:flex;flex-direction:column;gap:14px;margin-top:26px}
+.credential-list li{display:flex;align-items:flex-start;gap:12px;font-size:14.5px;color:#33455E;line-height:1.55}
+.credential-list svg{width:19px;height:19px;color:var(--blue);flex-shrink:0;margin-top:3px}
+
+/* ============ STATS ============ */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.stat{background:#fff;padding:32px 22px;text-align:center}
+.stat strong{display:block;font-family:'Fraunces',serif;font-size:1.85rem;font-weight:700;color:var(--navy);line-height:1.1;margin-bottom:8px}
+.stat span{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700}
+
+/* ============ CTA BAND ============ */
+.cta-band{position:relative;overflow:hidden;color:#fff;background:linear-gradient(120deg,#081729 0%,var(--navy) 48%,var(--navy-3) 100%);border-radius:22px;padding:62px 56px;text-align:center}
+.cta-band::before{content:'';position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(29,95,208,.4),transparent 66%);bottom:-260px;left:50%;transform:translateX(-50%)}
+.cta-band>*{position:relative;z-index:2}
+.cta-band h2{color:#fff;font-size:clamp(1.6rem,3vw,2.25rem);margin:16px 0 16px}
+.cta-band p{color:#BFD1E8;max-width:600px;margin:0 auto 32px;font-size:16.5px}
+.cta-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+
+/* ============ STEPS ============ */
+.steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.step{position:relative;padding-top:14px}
+.step::before{counter-increment:step;content:'0' counter(step);font-family:'Fraunces',serif;font-size:13px;font-weight:700;color:var(--blue);letter-spacing:.08em;display:block;margin-bottom:12px}
+.step h3{font-size:1.02rem;margin-bottom:9px;font-weight:700}
+.step p{font-size:14px;line-height:1.62}
+.step-line{height:2px;background:linear-gradient(90deg,var(--blue),transparent);border-radius:2px;margin-bottom:18px}
+
+/* ============ INSIGHTS ============ */
+.article-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:all .32s var(--ease);display:flex;flex-direction:column}
+.article-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:#CFDCEF}
+.article-top{height:140px;position:relative;overflow:hidden;background:linear-gradient(140deg,var(--navy) 0%,var(--navy-3) 60%,#1D4E96 100%);display:grid;place-items:center}
+.article-top::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:38px 38px}
+.article-top svg{width:44px;height:44px;color:rgba(255,255,255,.85);position:relative;z-index:2}
+.article-body{padding:26px 26px 30px;display:flex;flex-direction:column;flex:1}
+.article-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);background:var(--blue-light);padding:5px 11px;border-radius:20px;margin-bottom:14px;align-self:flex-start}
+.article-body h3{font-size:1.1rem;margin-bottom:11px;font-weight:700}
+.article-body p{font-size:14.3px;line-height:1.64;flex:1}
+.article-meta{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:1fr 1.28fr;gap:52px;align-items:start}
+.info-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:flex;gap:16px;transition:all .3s var(--ease);margin-bottom:16px}
+.info-card:hover{border-color:#CFDCEF;box-shadow:var(--shadow)}
+.info-icon{width:44px;height:44px;border-radius:11px;background:var(--blue-light);color:var(--blue);display:grid;place-items:center;flex-shrink:0}
+.info-icon svg{width:21px;height:21px}
+.info-card h4{font-size:.95rem;margin-bottom:5px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:var(--navy);letter-spacing:0}
+.info-card p,.info-card a{font-size:14.2px;color:var(--body);line-height:1.55;display:block}
+.info-card a:hover{color:var(--blue)}
+
+.form-panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:40px 38px;box-shadow:var(--shadow)}
+.form-panel h2{font-size:1.55rem;margin-bottom:8px}
+.form-panel>p{font-size:14.5px;margin-bottom:28px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{margin-bottom:18px;display:flex;flex-direction:column}
+.field label{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;letter-spacing:.005em}
+.field label .req{color:var(--blue)}
+.field input,.field select,.field textarea{width:100%;padding:13px 15px;border:1px solid #D8E1EE;border-radius:var(--radius-sm);background:#FBFCFE;color:var(--ink);transition:all .22s;outline:none}
+.field input::placeholder,.field textarea::placeholder{color:#9AA7BA}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(29,95,208,.1)}
+.field textarea{resize:vertical;min-height:110px}
+.consent{display:flex;gap:11px;align-items:flex-start;margin:6px 0 24px}
+.consent input{width:17px;height:17px;margin-top:3px;accent-color:var(--blue);flex-shrink:0}
+.consent label{font-size:12.8px;color:var(--muted);line-height:1.55;font-weight:400;cursor:pointer}
+.form-status{display:none;margin-top:18px;padding:14px 16px;border-radius:var(--radius-sm);background:#E9F8F0;border:1px solid #B6E5CD;color:#146B41;font-size:14px;font-weight:500}
+.form-status.show{display:block;animation:pageIn .4s var(--ease)}
+
+.map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);line-height:0;margin-top:8px}
+.map-wrap iframe{width:100%;height:400px;border:0;filter:grayscale(15%)}
+
+.hours-list{display:flex;flex-direction:column;gap:11px;margin-top:6px}
+.hours-list li{display:flex;justify-content:space-between;gap:14px;font-size:14px;padding-bottom:11px;border-bottom:1px dashed var(--line)}
+.hours-list li:last-child{border-bottom:none;padding-bottom:0}
+.hours-list strong{color:var(--navy);font-weight:700}
+
+/* ============ FOOTER ============ */
+.site-footer{background:var(--navy);color:#A9BED8;padding:70px 0 0;position:relative;overflow:hidden}
+.site-footer::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(29,95,208,.2),transparent 68%);top:-320px;right:-180px;pointer-events:none}
+.footer-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.55fr 1fr 1fr 1.25fr;gap:44px;padding-bottom:52px}
+.footer-brand .logo{margin-bottom:20px}
+.footer-brand .logo-mark{background:#fff;box-shadow:none;border:none}
+.footer-brand .logo-text strong{color:#fff}
+.footer-brand .logo-text span{color:#7E9BC0}
+.footer-brand p{font-size:14px;line-height:1.7;color:#9CB3CF;max-width:320px}
+.footer-col h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:20px}
+.footer-col ul{display:flex;flex-direction:column;gap:11px}
+.footer-col a{font-size:14px;color:#9CB3CF;transition:all .22s;display:inline-block;cursor:pointer}
+.footer-col a:hover{color:#fff;transform:translateX(3px)}
+.footer-contact li{display:flex;gap:11px;font-size:14px;line-height:1.55;color:#9CB3CF}
+.footer-contact svg{width:16px;height:16px;color:#4FA3FF;flex-shrink:0;margin-top:4px}
+.footer-contact a:hover{color:#fff}
+.footer-bottom{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.1);padding:24px 0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;font-size:13px;color:#7E9BC0}
+.footer-bottom a:hover{color:#fff}
+.footer-legal{display:flex;gap:22px;flex-wrap:wrap}
+
+/* ============ FLOATING ============ */
+.fab-stack{position:fixed;right:22px;bottom:22px;z-index:300;display:flex;flex-direction:column;gap:12px}
+.fab{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 30px rgba(10,29,58,.28);transition:all .3s var(--ease)}
+.fab:hover{transform:translateY(-4px) scale(1.05)}
+.fab svg{width:25px;height:25px;color:#fff}
+.fab-wa{background:#25D366}
+.fab-top{background:var(--navy);opacity:0;pointer-events:none;transform:translateY(10px)}
+.fab-top.show{opacity:1;pointer-events:auto;transform:none}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.grid .reveal:nth-child(2){transition-delay:.07s}
+.grid .reveal:nth-child(3){transition-delay:.14s}
+.grid .reveal:nth-child(4){transition-delay:.21s}
+.grid .reveal:nth-child(5){transition-delay:.28s}
+.grid .reveal:nth-child(6){transition-delay:.35s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1060px){
+  .hero-inner{grid-template-columns:1fr;gap:48px}
+  .hero-card{max-width:520px}
+  .split,.split--reverse{grid-template-columns:1fr;gap:44px}
+  .split--reverse .portrait{order:-1}
+  .portrait{max-width:400px;aspect-ratio:4/3.6}
+  .trust-grid{grid-template-columns:repeat(3,1fr);gap:18px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr;gap:38px}
+}
+@media(max-width:960px){
+  .nav{position:absolute;top:100%;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:2px;background:#fff;padding:14px 20px 22px;border-bottom:1px solid var(--line);box-shadow:0 24px 44px rgba(10,29,58,.12)}
+  .nav.open{display:flex;animation:pageIn .3s var(--ease)}
+  .nav-link{padding:13px 14px;font-size:15px}
+  .nav-link.active::after{left:14px;right:auto;width:22px;bottom:8px}
+  .nav-toggle{display:flex}
+  .header-cta .btn{display:none}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:38px}
+  .cta-band{padding:48px 30px}
+  .form-panel{padding:32px 24px}
+}
+@media(max-width:760px){
+  .section{padding:66px 0}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .topbar-right{display:none}
+  .hero{padding:64px 0 72px}
+  .hero-points{gap:12px 20px}
+  .hero-actions .btn{flex:1 1 auto}
+  .form-row{grid-template-columns:1fr;gap:0}
+}
+@media(max-width:640px){
+  .container{padding:0 18px}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .trust-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .stats{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .topbar-left{gap:14px}
+  .topbar{font-size:12px}
+  .page-hero{padding:56px 0 52px}
+  .hero-card{padding:26px 22px}
+  .cta-band{padding:42px 22px;border-radius:16px}
+  .cta-actions .btn,.hero-actions .btn{width:100%}
+  .fab{width:50px;height:50px}
+  .fab svg{width:23px;height:23px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a class="topbar-item" href="tel:0721916614">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        0721 916 614
+      </a>
+      <a class="topbar-item" href="mailto:mutungamusembi@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        mutungamusembi@gmail.com
+      </a>
+      <span class="topbar-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Westlands, Nairobi
+      </span>
+    </div>
+    <div class="topbar-right"><span class="topbar-dot"></span> Mon&ndash;Fri &middot; 8:00 a.m.&ndash;5:00 p.m.</div>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="logo" data-goto="home" aria-label="Mutunga D.M and Company home">
+      <!-- LOGO IMAGE ADDED HERE -->
+      <span class="logo-mark">
+        <img src="logo.png" alt="MDM Logo">
+      </span>
+      <span class="logo-text">
+        <strong>Mutunga D.M &amp; Company</strong>
+        <span>Certified Public Accountants</span>
+      </span>
+    </a>
+    <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+      <a class="nav-link active" data-goto="home">Home</a>
+      <a class="nav-link" data-goto="about">About Us</a>
+      <a class="nav-link" data-goto="services">Services</a>
+      <a class="nav-link" data-goto="industries">Industries</a>
+      <a class="nav-link" data-goto="insights">Insights</a>
+      <a class="nav-link" data-goto="contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <button class="btn btn-primary" data-goto="contact">
+        Request a Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= PAGE: HOME ================= -->
+<section class="page active" id="page-home">
+
+  <div class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow eyebrow--light">Westlands, Nairobi &middot; Established 2013</span>
+        <h1>Reliable Accounting, Audit, Tax and Customs Advisory in Nairobi</h1>
+        <p class="hero-lead">Mutunga D.M and Company helps businesses stay compliant, understand their numbers and make confident financial decisions through practical professional advice.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-goto="contact">
+            Request a Consultation
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <button class="btn btn-ghost" data-goto="services">
+            Explore Our Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Certified public accountants</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Tax and customs advisory</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Serving businesses across Kenya</li>
+        </ul>
+      </div>
+
+      <aside class="hero-card">
+        <h3>Speak with a CPA today</h3>
+        <p>Confidential, practical advice for your business &mdash; by appointment.</p>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:0721916614">0721 916 614</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:mutungamusembi@gmail.com">mutungamusembi@gmail.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Connaught Apartments, Lantana Road, Westlands, Nairobi</span>
+          </li>
+        </ul>
+        <button class="btn btn-primary w-full" data-goto="contact">Request a Consultation</button>
+        <a class="btn btn-wa w-full" href="https://wa.me/254721916614" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.9-2.1-.2-.5-.5-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 3 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.2-.2-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.3c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.2 15 3.8 13.5 3.8 12 3.8 7.5 7.5 3.8 12 3.8S20.2 7.5 20.2 12 16.5 20.2 12 20.2z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </aside>
+    </div>
+  </div>
+
+  <div class="trust-strip">
+    <div class="container">
+      <ul class="trust-grid">
+        <li class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>Certified public accountants</li>
+        <li class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>Tax and customs advisory</li>
+        <li class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>Audit and assurance support</li>
+        <li class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>Serving businesses across Kenya</li>
+        <li class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>Professional, confidential &amp; practical</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Services overview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">What We Do</span>
+        <h2>Practical financial expertise for Kenyan businesses</h2>
+        <p>From day-to-day bookkeeping to audit readiness, tax compliance and customs advisory &mdash; we provide the clarity and confidence your business needs.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 012-2h12a2 2 0 012 2v14"/><path d="M4 19h16M8 7h8M8 11h8M8 15h5"/></svg></div>
+          <h3>Accounting &amp; Bookkeeping</h3>
+          <p>Accurate record-keeping, management accounts, reconciliations, payroll support and financial reporting.</p>
+          <span class="card-link" data-goto="services">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <h3>Audit &amp; Assurance</h3>
+          <p>Independent audit support, internal review, financial-statement preparation and audit-readiness assistance.</p>
+          <span class="card-link" data-goto="services">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <h3>Tax Advisory &amp; Compliance</h3>
+          <p>Income tax, VAT, withholding tax, PAYE, tax planning, KRA compliance and tax-return support.</p>
+          <span class="card-link" data-goto="services">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Customs &amp; Trade Advisory</h3>
+          <p>Customs compliance, import/export tax matters, tariffs, documentation and trade-related advisory.</p>
+          <span class="card-link" data-goto="services">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+          <h3>Business Advisory</h3>
+          <p>Financial analysis, business structuring, budgeting, cash-flow support and operational financial advice.</p>
+          <span class="card-link" data-goto="services">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+          <h3>Company Secretarial</h3>
+          <p>Business registration, statutory compliance and related administrative support.</p>
+          <span class="card-link" data-goto="services">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Why Choose Us</span>
+        <h2>Values that guide every engagement</h2>
+        <p>We combine technical expertise with a practical, client-focused approach.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="value-card reveal"><div class="value-num">01</div><h3>Integrity</h3><p>Ethical, transparent and professional service in every engagement.</p></div>
+        <div class="value-card reveal"><div class="value-num">02</div><h3>Accuracy</h3><p>Careful financial reporting and meticulous compliance work.</p></div>
+        <div class="value-card reveal"><div class="value-num">03</div><h3>Confidentiality</h3><p>Your information is handled with strict discretion at all times.</p></div>
+        <div class="value-card reveal"><div class="value-num">04</div><h3>Practical Advice</h3><p>Clear guidance that supports real, everyday business decisions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principal intro -->
+  <section class="section">
+    <div class="container split">
+      <!-- PORTRAIT IMAGE ADDED HERE -->
+      <div class="portrait reveal">
+        <img src="images-dennis-musembi-mutunga-cpa.jpg" alt="CPA Dennis Musembi Mutunga" class="portrait-img">
+        <div class="portrait-badge">
+          <strong>CPA Dennis Musembi Mutunga</strong>
+          <span>Founder &amp; Lead Consultant &middot; P/2201</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Our Principal</span>
+        <h2>Led by an experienced CPA</h2>
+        <p>Dennis leads the firm&rsquo;s advisory, tax and customs work, supporting clients with financial compliance, tax matters and practical business guidance. His professional experience with the firm dates to February 2013.</p>
+        <p>The firm is listed among ICPAK-approved audit firms in 2023&ndash;2025 firm listings, with CPA Dennis Musembi Mutunga as the named partner.</p>
+        <div class="split-actions">
+          <button class="btn btn-primary" data-goto="about">About the Firm</button>
+          <button class="btn btn-outline" data-goto="contact">Book a Consultation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who we serve -->
+  <section class="section section--blue">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Who We Serve</span>
+        <h2>Supporting businesses at every stage</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="value-card reveal"><h3>SMEs</h3><p>Bookkeeping, tax compliance and financial reporting for growing businesses.</p></div>
+        <div class="value-card reveal"><h3>Importers &amp; Exporters</h3><p>Customs compliance and cross-border trade advisory.</p></div>
+        <div class="value-card reveal"><h3>Companies</h3><p>Audit preparation and stronger internal financial controls.</p></div>
+        <div class="value-card reveal"><h3>Startups &amp; NGOs</h3><p>Accounting systems, tax registration, compliance and reliable reporting.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <span class="eyebrow eyebrow--light eyebrow--center">Get Started</span>
+        <h2>A Nairobi CPA practice you can rely on</h2>
+        <p>Manage compliance, understand your finances and navigate tax and customs requirements with confidence.</p>
+        <div class="cta-actions">
+          <button class="btn btn-primary" data-goto="contact">Request a Consultation</button>
+          <a class="btn btn-ghost" href="tel:0721916614">Call Us Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PAGE: ABOUT ================= -->
+<section class="page" id="page-about">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">About Us</span>
+      <h1>About Mutunga D.M and Company</h1>
+      <p>A Nairobi-based professional accounting and advisory practice serving businesses, organisations and individuals who need dependable financial, tax and compliance support.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2>A practice built on trust and practical advice</h2>
+        <p>Mutunga D.M and Company is a Nairobi-based professional accounting and advisory practice serving businesses, organisations and individuals who need dependable financial, tax and compliance support.</p>
+        <p>Led by CPA Dennis Musembi Mutunga, the firm combines accounting, audit, tax and customs expertise with practical business advice. We help clients meet regulatory obligations, improve financial visibility and approach decisions with greater confidence.</p>
+        <ul class="credential-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Operating since February 2013</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Business name registration BN/2013/258169</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Listed among ICPAK-approved audit firms, 2023&ndash;2025</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Practice number P/2201</li>
+        </ul>
+      </div>
+      <!-- PORTRAIT IMAGE ADDED HERE -->
+      <div class="portrait reveal" style="max-width:100%;aspect-ratio:4/3.4">
+        <img src="principal.jpg" alt="CPA Dennis Musembi Mutunga" class="portrait-img">
+        <div class="portrait-badge">
+          <strong>Mutunga D.M &amp; Company</strong>
+          <span>Connaught Apartments, Lantana Road, Westlands &middot; Since 2013</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Our Values</span>
+        <h2>What we stand for</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="value-card reveal"><div class="value-num">01</div><h3>Integrity</h3><p>Ethical, transparent and professional service in everything we do.</p></div>
+        <div class="value-card reveal"><div class="value-num">02</div><h3>Accuracy</h3><p>Careful financial reporting and compliance work you can depend on.</p></div>
+        <div class="value-card reveal"><div class="value-num">03</div><h3>Confidentiality</h3><p>Client information is treated with the utmost discretion.</p></div>
+        <div class="value-card reveal"><div class="value-num">04</div><h3>Practical Advice</h3><p>Clear guidance that supports real business decisions.</p></div>
+        <div class="value-card reveal"><div class="value-num">05</div><h3>Responsiveness</h3><p>Timely support for tax, accounting and compliance needs.</p></div>
+        <div class="value-card reveal"><div class="value-num">06</div><h3>Professionalism</h3><p>Calm, precise and approachable service at every step.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Principal Profile</span>
+        <h2>Meet the principal</h2>
+      </div>
+      <div class="split">
+        <!-- PORTRAIT IMAGE ADDED HERE -->
+        <div class="portrait reveal">
+          <img src="principal.jpg" alt="CPA Dennis Musembi Mutunga" class="portrait-img">
+          <div class="portrait-badge">
+            <strong>CPA Dennis Musembi Mutunga</strong>
+            <span>Founder &amp; Lead Consultant &middot; P/2201</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 style="font-size:1.4rem;margin-bottom:6px">Dennis Musembi Mutunga, CPA</h3>
+          <p style="color:var(--blue);font-weight:700;font-size:14px;margin-bottom:18px">Founder and Lead Consultant &middot; Advisory, Tax and Customs Consultancy</p>
+          <p>Dennis leads the firm&rsquo;s advisory, tax and customs work, supporting clients with financial compliance, tax matters and practical business guidance. His professional experience with the firm dates to February 2013.</p>
+          <p>He is the named partner in the firm&rsquo;s ICPAK-approved audit-firm listing, and his professional profile identifies the practice as providing advisory, tax and customs consultancy in Westlands, Nairobi.</p>
+          <div class="split-actions">
+            <button class="btn btn-primary" data-goto="contact">Request a Consultation</button>
+            <button class="btn btn-outline" data-goto="services">View Services</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat"><strong>2013</strong><span>Operating Since</span></div>
+        <div class="stat"><strong>P/2201</strong><span>Practice Number</span></div>
+        <div class="stat"><strong>2023&ndash;25</strong><span>ICPAK Listed</span></div>
+        <div class="stat"><strong>Westlands</strong><span>Nairobi Office</span></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PAGE: SERVICES ================= -->
+<section class="page" id="page-services">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Our Services</span>
+      <h1>Accounting, Audit, Tax and Customs Services in Nairobi</h1>
+      <p>Comprehensive professional services designed to keep your business compliant, informed and confident.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 012-2h12a2 2 0 012 2v14"/><path d="M4 19h16M8 7h8M8 11h8M8 15h5"/></svg></div>
+          <h3>Accounting &amp; Bookkeeping</h3>
+          <p>Accurate record-keeping and reporting that gives you a clear picture of your business finances.</p>
+          <ul class="bullets">
+            <li>Bookkeeping and ledger maintenance</li>
+            <li>Management accounts and reconciliations</li>
+            <li>Payroll support</li>
+            <li>Financial reporting</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <h3>Audit &amp; Assurance</h3>
+          <p>Independent support to strengthen confidence in your financial statements.</p>
+          <ul class="bullets">
+            <li>Independent audit support</li>
+            <li>Internal review</li>
+            <li>Financial-statement preparation</li>
+            <li>Audit-readiness assistance</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <h3>Tax Advisory &amp; Compliance</h3>
+          <p>Practical tax guidance to help you stay compliant and plan effectively.</p>
+          <ul class="bullets">
+            <li>Income tax, VAT and withholding tax</li>
+            <li>PAYE and payroll tax</li>
+            <li>Tax planning and KRA compliance</li>
+            <li>Tax-return support</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Customs &amp; Trade Advisory</h3>
+          <p>Specialist support for importers, exporters and cross-border businesses.</p>
+          <ul class="bullets">
+            <li>Customs compliance</li>
+            <li>Import/export tax matters</li>
+            <li>Tariffs and documentation</li>
+            <li>Trade-related advisory</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+          <h3>Business Advisory</h3>
+          <p>Clear financial insight to support better business decisions.</p>
+          <ul class="bullets">
+            <li>Financial analysis</li>
+            <li>Business structuring</li>
+            <li>Budgeting and cash-flow support</li>
+            <li>Operational financial advice</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+          <h3>Company Secretarial &amp; Registration</h3>
+          <p>Administrative and statutory support to keep your business in good standing.</p>
+          <ul class="bullets">
+            <li>Business registration</li>
+            <li>Statutory compliance</li>
+            <li>Related administrative support</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">How We Work</span>
+        <h2>A simple, clear engagement process</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-line"></div><h3>Consultation</h3><p>We discuss your needs, current position and priorities.</p></div>
+        <div class="step reveal"><div class="step-line"></div><h3>Scope &amp; Proposal</h3><p>We agree on scope, timelines and a clear engagement plan.</p></div>
+        <div class="step reveal"><div class="step-line"></div><h3>Delivery</h3><p>We carry out the work with accuracy, discretion and professionalism.</p></div>
+        <div class="step reveal"><div class="step-line"></div><h3>Ongoing Support</h3><p>We remain available for compliance and advisory support.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Not sure which service you need?</h2>
+        <p>Tell us about your business and we&rsquo;ll recommend the right approach.</p>
+        <div class="cta-actions">
+          <button class="btn btn-primary" data-goto="contact">Request a Consultation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PAGE: INDUSTRIES ================= -->
+<section class="page" id="page-industries">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Industries &amp; Clients</span>
+      <h1>Who We Work With</h1>
+      <p>We support a wide range of businesses and organisations across Nairobi and Kenya with dependable financial, tax and compliance support.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg></div>
+          <h3>Small &amp; Medium Enterprises</h3>
+          <p>Bookkeeping, tax compliance and financial reporting for growing SMEs that need clarity and control.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Importers &amp; Exporters</h3>
+          <p>Customs compliance, import/export tax matters and trade documentation advisory.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+          <h3>Companies Preparing for Audit</h3>
+          <p>Audit-readiness assistance and stronger internal financial controls.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <h3>Startups</h3>
+          <p>Accounting systems, tax registration and compliance guidance from day one.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+          <h3>Established Businesses</h3>
+          <p>Tax planning, KRA support and practical advisory for mature operations.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <h3>NGOs &amp; Partnerships</h3>
+          <p>Reliable financial reporting and compliance support for non-profits and partnerships.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow eyebrow--center">Our Commitment</span>
+        <h2>What every client can expect</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="value-card reveal"><h3>Confidentiality</h3><p>Your financial information is handled with strict discretion.</p></div>
+        <div class="value-card reveal"><h3>Responsiveness</h3><p>Timely communication on tax, accounting and compliance matters.</p></div>
+        <div class="value-card reveal"><h3>Clarity</h3><p>Plain-language advice you can act on with confidence.</p></div>
+        <div class="value-card reveal"><h3>Accuracy</h3><p>Careful, professional work that stands up to scrutiny.</p></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PAGE: INSIGHTS ================= -->
+<section class="page" id="page-insights">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Insights</span>
+      <h1>Tax Deadlines, KRA Updates &amp; Accounting Tips</h1>
+      <p>Practical guidance to help Kenyan businesses stay compliant and financially confident.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <article class="article-card reveal">
+          <div class="article-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">Tax Deadlines</span>
+            <h3>Key Kenyan Tax Deadlines to Track</h3>
+            <p>Staying ahead of VAT, PAYE, withholding tax and income tax deadlines helps avoid penalties and keeps your business in good standing with KRA.</p>
+            <div class="article-meta"><span>Compliance</span><span>5 min read</span></div>
+          </div>
+        </article>
+        <article class="article-card reveal">
+          <div class="article-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">KRA Updates</span>
+            <h3>Understanding Your KRA Compliance Obligations</h3>
+            <p>From PIN registration to filing returns, a clear overview of the core obligations that keep your business compliant.</p>
+            <div class="article-meta"><span>Tax</span><span>4 min read</span></div>
+          </div>
+        </article>
+        <article class="article-card reveal">
+          <div class="article-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 012-2h12a2 2 0 012 2v14"/><path d="M4 19h16M8 7h8M8 11h8M8 15h5"/></svg>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">Accounting Tips</span>
+            <h3>Simple Bookkeeping Habits for SMEs</h3>
+            <p>Practical record-keeping habits that improve visibility, reduce stress at year-end and support better decisions.</p>
+            <div class="article-meta"><span>Accounting</span><span>3 min read</span></div>
+          </div>
+        </article>
+        <article class="article-card reveal">
+          <div class="article-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">Audit Readiness</span>
+            <h3>Preparing Your Business for an Audit</h3>
+            <p>A short checklist of the records, reconciliations and controls that make audit preparation smoother.</p>
+            <div class="article-meta"><span>Audit</span><span>4 min read</span></div>
+          </div>
+        </article>
+        <article class="article-card reveal">
+          <div class="article-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">Customs</span>
+            <h3>Customs Compliance for Importers</h3>
+            <p>Documentation, tariffs and valuation are common pain points for importers. Here&rsquo;s what to keep in order.</p>
+            <div class="article-meta"><span>Trade</span><span>4 min read</span></div>
+          </div>
+        </article>
+        <article class="article-card reveal">
+          <div class="article-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <div class="article-body">
+            <span class="article-tag">VAT</span>
+            <h3>VAT Registration: What Businesses Should Know</h3>
+            <p>When registration applies, what records to keep and how to stay on top of filing obligations.</p>
+            <div class="article-meta"><span>Tax</span><span>3 min read</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Need help with a compliance matter?</h2>
+        <p>Speak to a CPA about your tax, audit or accounting questions.</p>
+        <div class="cta-actions">
+          <button class="btn btn-primary" data-goto="contact">Request a Consultation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ================= PAGE: CONTACT ================= -->
+<section class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="container">
+      <span class="eyebrow eyebrow--light">Contact Us</span>
+      <h1>Contact Mutunga D.M and Company</h1>
+      <p>Nairobi tax and accounting consultants. Reach out to discuss your needs or book a consultation.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact information -->
+        <div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <h4>Office Location</h4>
+              <p>Connaught Apartments, Lantana Road</p>
+              <p>Westlands, Nairobi, Kenya</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div>
+              <h4>Phone &amp; WhatsApp</h4>
+              <a href="tel:0721916614">0721 916 614</a>
+              <a href="https://wa.me/254721916614" target="_blank" rel="noopener">WhatsApp us</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:mutungamusembi@gmail.com">mutungamusembi@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div style="width:100%">
+              <h4>Office Hours</h4>
+              <ul class="hours-list">
+                <li><span>Monday &ndash; Friday</span><strong>8:00 a.m. &ndash; 5:00 p.m.</strong></li>
+                <li><span>Saturday &ndash; Sunday</span><strong>Closed</strong></li>
+                <li><span>Consultations</span><strong>By appointment</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              title="Mutunga D.M and Company office location, Connaught Apartments, Lantana Road, Westlands, Nairobi"
+              src="https://www.google.com/maps?q=-1.2666,36.7998&z=17&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="form-panel">
+          <h2>Request a Consultation</h2>
+          <p>Fill in the form below and we&rsquo;ll get back to you promptly.</p>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="fullname">Full Name <span class="req">*</span></label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your full name" required>
+              </div>
+              <div class="field">
+                <label for="business">Business Name</label>
+                <input type="text" id="business" name="business" placeholder="Your business name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="0721 916 614" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="service">Service Needed <span class="req">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Accounting</option>
+                  <option>Audit</option>
+                  <option>Tax</option>
+                  <option>Customs</option>
+                  <option>Business Advisory</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="contact-method">Preferred Contact Method</label>
+                <select id="contact-method" name="contact-method">
+                  <option selected>Phone</option>
+                  <option>WhatsApp</option>
+                  <option>Email</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message">Brief Message <span class="req">*</span></label>
+              <textarea id="message" name="message" placeholder="Tell us briefly how we can help..." required></textarea>
+            </div>
+            <div class="consent">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">By submitting this form, you agree that Mutunga D.M and Company may contact you regarding your enquiry.</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">
+              Send Enquiry
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <!-- LOGO IMAGE ADDED HERE -->
+          <span class="logo-mark">
+            <img src="logo.png" alt="MDM Logo">
+          </span>
+          <span class="logo-text">
+            <strong>Mutunga D.M &amp; Company</strong>
+            <span>Certified Public Accountants</span>
+          </span>
+        </div>
+        <p>Independent professional accounting, audit, tax and customs advisory for Kenyan businesses. Westlands, Nairobi &mdash; since 2013.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a data-goto="home">Home</a></li>
+          <li><a data-goto="about">About Us</a></li>
+          <li><a data-goto="services">Services</a></li>
+          <li><a data-goto="industries">Industries</a></li>
+          <li><a data-goto="insights">Insights</a></li>
+          <li><a data-goto="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a data-goto="services">Accounting &amp; Bookkeeping</a></li>
+          <li><a data-goto="services">Audit &amp; Assurance</a></li>
+          <li><a data-goto="services">Tax Advisory &amp; Compliance</a></li>
+          <li><a data-goto="services">Customs &amp; Trade Advisory</a></li>
+          <li><a data-goto="services">Business Advisory</a></li>
+          <li><a data-goto="services">Company Secretarial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in Touch</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Connaught Apartments, Lantana Road, Westlands, Nairobi, Kenya</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:0721916614">0721 916 614</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:mutungamusembi@gmail.com">mutungamusembi@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Mutunga D.M and Company. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+        <a href="#contact" data-goto="contact">Google Business Profile</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+<div class="fab-stack">
+  <a class="fab fab-wa" href="https://wa.me/254721916614" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1.1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.9-2.1-.2-.5-.5-.5-.6-.5h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 3 4.6 4.1.6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.2-.2-.5-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.3c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.2 15 3.8 13.5 3.8 12 3.8 7.5 7.5 3.8 12 3.8S20.2 7.5 20.2 12 16.5 20.2 12 20.2z"/></svg>
+  </a>
+  <button class="fab fab-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+</div>
+
+<script>
+/* ============================================================
+   1. PAGE NAVIGATION (single-page router)
+   ============================================================ */
+(function () {
+  const pages = {
+    home:     document.getElementById('page-home'),
+    about:    document.getElementById('page-about'),
+    services: document.getElementById('page-services'),
+    industries: document.getElementById('page-industries'),
+    insights: document.getElementById('page-insights'),
+    contact:  document.getElementById('page-contact')
+  };
+
+  const navLinks = document.querySelectorAll('.nav-link');
+  const nav = document.getElementById('primary-nav');
+  const navToggle = document.getElementById('nav-toggle');
+
+  function closeMobileNav() {
+    nav.classList.remove('open');
+    navToggle.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function showPage(name, updateHash) {
+    if (!pages[name]) name = 'home';
+
+    Object.keys(pages).forEach(function (key) {
+      pages[key].classList.toggle('active', key === name);
+    });
+
+    navLinks.forEach(function (link) {
+      link.classList.toggle('active', link.getAttribute('data-goto') === name);
+    });
+
+    closeMobileNav();
+
+    if (updateHash !== false) {
+      history.replaceState(null, '', '#' + name);
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    requestAnimationFrame(initReveals);
+  }
+
+  document.addEventListener('click', function (e) {
+    const trigger = e.target.closest('[data-goto]');
+    if (!trigger) return;
+    e.preventDefault();
+    showPage(trigger.getAttribute('data-goto'), true);
+  });
+
+  navToggle.addEventListener('click', function () {
+    const isOpen = nav.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  const initial = (location.hash || '#home').replace('#', '');
+  showPage(pages[initial] ? initial : 'home', false);
+
+  window.addEventListener('hashchange', function () {
+    const name = (location.hash || '#home').replace('#', '');
+    if (pages[name]) showPage(name, false);
+  });
+
+  window.__showPage = showPage;
+})();
+
+/* ============================================================
+   2. STICKY HEADER SHADOW
+   ============================================================ */
+(function () {
+  const header = document.getElementById('site-header');
+  const onScroll = function () {
+    header.classList.toggle('scrolled', window.scrollY > 12);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+/* ============================================================
+   3. SCROLL REVEAL ANIMATIONS
+   ============================================================ */
+let revealObserver = null;
+
+function initReveals() {
+  const items = document.querySelectorAll('.page.active .reveal:not(.in)');
+  if (!items.length) return;
+
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+
+  if (!revealObserver) {
+    revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }
+
+  items.forEach(function (el) { revealObserver.observe(el); });
+}
+
+window.addEventListener('load', initReveals);
+initReveals();
+
+/* ============================================================
+   4. BACK TO TOP
+   ============================================================ */
+(function () {
+  const btn = document.getElementById('back-to-top');
+  window.addEventListener('scroll', function () {
+    btn.classList.toggle('show', window.scrollY > 420);
+  }, { passive: true });
+
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+/* ============================================================
+   5. CONTACT FORM
+   ============================================================ */
+(function () {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(function (field) {
+      if (field.type === 'checkbox' ? !field.checked : !field.value.trim()) {
+        valid = false;
+        field.style.borderColor = '#E05252';
+        field.addEventListener('input', function reset() {
+          field.style.borderColor = '';
+          field.removeEventListener('input', reset);
+        });
+      }
+    });
+
+    if (!valid) {
+      status.className = 'form-status show';
+      status.style.background = '#FDECEC';
+      status.style.borderColor = '#F3C2C2';
+      status.style.color = '#A32323';
+      status.textContent = 'Please complete all required fields before submitting.';
+      return;
+    }
+
+    const name = document.getElementById('fullname').value.trim().split(' ')[0];
+    status.className = 'form-status show';
+    status.style.background = '';
+    status.style.borderColor = '';
+    status.style.color = '';
+    status.textContent = 'Thank you' + (name ? ', ' + name : '') +
+      '. Your enquiry has been received. Mutunga D.M and Company will contact you shortly.';
+
+    form.reset();
+  });
+})();
+
+/* ============================================================
+   6. FOOTER YEAR
+   ============================================================ */
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
